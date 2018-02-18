@@ -112,6 +112,22 @@ section.info.inscription {
     padding-bottom: 8vh;
 }
 
+section.info.contact {
+    padding-bottom: 12vh;
+}
+
+span.contact-info {
+    display: block;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.padding-bottom {
+    padding-bottom: 10px;
+}
+
 @media only screen and (max-width: 767px) {
     nav.navbar {
         background-color: $after_background;
