@@ -4,6 +4,8 @@ $after_background: rgba(211,211,211,0.8);
 $gray_text: #777;
 $text_section_color: #333;
 $divider_color: #CCC;
+$footer_background: #222;
+$footer_color_text: #F1FBFD;
 
 @font-face {
     font-family: 'Open Sans';
@@ -126,6 +128,16 @@ span.contact-info {
 
 .padding-bottom {
     padding-bottom: 10px;
+}
+
+footer {
+	color: $footer_color_text;
+    padding: 25px 0px;
+    margin: 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: $footer_background;
 }
 
 @media only screen and (max-width: 767px) {
