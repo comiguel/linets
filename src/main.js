@@ -3,17 +3,17 @@ import 'bootstrap';
 import './assets/css/main.scss';
 
 $(document).ready(function() {
-	var after = false;
-	var navbar = $('#navbar');
+	toggleNavbar();
 	$(window).on('scroll', function(event) {
-		event.preventDefault();
-		console.log('scrollY:' + window.scrollY);
-		if (!after && window.scrollY > 12) {
-			after = true;
-			navbar.toggleClass('navbar-after');
-		} else if (after && window.scrollY < 12) {
-			after = false;
-			navbar.toggleClass('navbar-after');
-		}
+		toggleNavbar();
 	});
 });
+
+function toggleNavbar() {
+	var navbar = $('#navbar');
+	if (window.scrollY > 12 && !navbar.hasClass('navbar-after')) {
+		navbar.toggleClass('navbar-after');
+	} else if (window.scrollY < 12 && navbar.hasClass('navbar-after')) {
+		navbar.toggleClass('navbar-after');
+	}
+}

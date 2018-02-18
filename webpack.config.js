@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -22,6 +23,7 @@ module.exports = {
                         loader: 'css-loader',
                         options: {
                             url: false,
+                            minimize: true,
                             sourceMap: true
                         }
                     }, 'sass-loader']
@@ -40,6 +42,7 @@ module.exports = {
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery",
-        })
+        }),
+        new UglifyJsPlugin()
     ]
 }
