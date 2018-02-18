@@ -1,0 +1,15 @@
+{
+  "name": "linets",
+  "version": "1.0.0",
+  "description": "Carlos Hincapié Front challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/comiguel/linets.git"
+  },
+  "author": "Carlos Hincapié carmihinfer@gmail.com",
+  "license": "MIT"
+}
