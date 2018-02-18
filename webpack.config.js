@@ -33,6 +33,9 @@ module.exports = {
         new CopyWebpackPlugin([
             { from: 'src/assets/images', to:'assets/images' }
         ]),
+        new CopyWebpackPlugin([
+            { from: 'src/assets/fonts', to:'assets/fonts' }
+        ]),
         new ExtractTextPlugin('assets/css/[name].css'),
         new webpack.ProvidePlugin({
             $: "jquery",
