@@ -1,1 +1,72 @@
 @import '~bootstrap/dist/css/bootstrap.css';
+
+$after_background: rgba(211,211,211,0.8);
+$gray_text: #777;
+
+nav.navbar {
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+.navbar-brand {
+    padding: 0px;
+    img {
+        max-height: 50px;
+    }
+}
+
+.navbar-custom {
+    padding: 20px 0px;
+    ul.nav {
+        border: none;
+    }
+    ul.nav > li > a {
+        color: $gray_text;
+    }
+    ul.nav > li > a:hover {
+        background-color: lightgray;
+        border: none;
+        border-radius: 0px;
+    }
+}
+
+.navbar-after {
+    background-color: $after_background;
+    padding: 0px;
+}
+
+.navbar-header button, .navbar-header .icon-bar {
+    border: 1px solid $gray_text;
+}
+
+header {
+    background-image: url('../images/bg.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 68vh;
+    h1 {
+        transition: font-size .1s ease-in-out;
+        text-transform: uppercase;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+}
+
+.header-content {
+    width: 100%;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.header-paragraph {
+    font-size: 11px;
+}
+
+.container {
+    padding-right: 12vw;
+    padding-left: 12vw;
+    margin-right: auto;
+    margin-left: auto;
+}
